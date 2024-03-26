@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS-Specificity</title>
+</head>
+
+<body>
+
+    <!-- Example one -->
+    <div>
+        <p></p>
+        <span>
+            <span>span example one</span>
+        </span>
+    </div>
+    <hr>
+    <!-- Example Two -->
+    <div class="test">
+        <div class="content">
+            <p>content</p>
+        </div>
+    </div>
+    <hr>
+    <!-- Example Three -->
+    <p id="main">
+        <span class="main-content">
+            Lorem, ipsum.
+        </span>
+    </p>
+    <hr>
+    <!-- Example Four -->
+    <div class="container">
+        <div class="box">
+            <div class="title">
+                <h2 id="main-title" class="main-title">main title</h2>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!--Example Five -->
+
+    <div class="wrapper">
+        <span style="color: brown;">span with inline style </span>
+    </div>
+    <hr>
+
+    <!-- !IMPORTANT EAMPLE -->
+    <div class="holder">
+        <span style="background-color: gold; font-size: 25px;" class="one" id="two">with !IMPORTANT</span>
+        <p>p first of type</p>
+    </div>
+    <!--  -->
+</body>
+
+</html>
